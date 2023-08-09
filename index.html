@@ -7,10 +7,37 @@
     <title>CalEve.org</title>
     <link rel="stylesheet" href="styles/Main.css">
 </head>
-<body>
+<body class="main-body">
     <h1 class="main-heading">CalEve.org</h1>
-    <img class="GrimReaper-image" src="./images/GrimReaper.jpg" alt="GrimReaper.jpg">
-    <div><p class="All-rights-reserved-footer">&#169 All Rights Reserved - Caleve.org</p></div>
+    <img onclick="Clicktheimage()"  class="GrimReaper-image" src="./images/GrimReaper.jpg" alt="GrimReaper.jpg">
+    <!-- <img src="images/GrimReaper2.png"> -->
+    
+    <div class="footer"><div><p class="All-rights-reserved-footer">&#169 All Rights Reserved - Caleve.org</p></div>
+    <div><p class="All-rights-reserved-footer">Email me at <span class="email-contact">Gravedigger@duck.com</span></p></div></div>
+    
+
+    <script>
+        function Clicktheimage(){
+            console.log(document.querySelector(".GrimReaper-image").src);
+            console.log("-------------------------------------");
+           
+           if (document.querySelector(".GrimReaper-image").getAttribute("src") === './images/GrimReaper.jpg'  || document.querySelector(".main-body").style.backgroundColor === "white"){
+            document.querySelector(".GrimReaper-image").setAttribute("src", "./images/GrimReaper2.png") 
+            document.querySelector(".main-body").style.backgroundColor = "black"
+
+            document.querySelector(".main-heading").style.color = "#07ed07"
+
+           }
+           else if(document.querySelector(".GrimReaper-image").getAttribute("src") === "./images/GrimReaper2.png" || document.querySelector(".main-body").style.backgroundColor === "black"){
+            document.querySelector(".GrimReaper-image").setAttribute("src", "./images/GrimReaper.jpg")
+            document.querySelector(".main-body").style.backgroundColor = "white"
+            document.querySelector(".main-heading").style.color = "black"
+
+           }
+           console.log(document.querySelector(".GrimReaper-image").src);
+
+        }
+    </script>
 
     
 </body>

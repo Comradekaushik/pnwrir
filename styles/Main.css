@@ -1,11 +1,37 @@
+.main-body{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
 .main-heading {
   font-family: "Handjet", cursive;
   
 }
 .GrimReaper-image{
     height: 60vh;
+    cursor: pointer;
+    
+    /* width:85vw; */
 }
 
 .All-rights-reserved-footer{
     font-family: Arial,'Times New Roman', Times, serif;
+}
+.email-contact{
+  font-family: cursive;
+}
+
+.footer{
+  background-color: black;
+  color: #07ed07;
+  padding-left: 1%;
+  border-style: solid;
+  border-color: black;
+  border-radius:8px;
+  margin-left:2%;
+  margin-right: 2%;
+  
+  width: 96vw;
 }
